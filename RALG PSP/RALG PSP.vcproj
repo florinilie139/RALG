@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="9,00"
+	Name="RALG PSP"
+	ProjectGUID="{C0971EBA-CD81-4AE2-B9BE-632A6A06EB48}"
+	RootNamespace="RALG PSP"
+	Keyword="MakeFileProj"
+	TargetFrameworkVersion="196613"
+	>
+	<Platforms>
+		<Platform
+			Name="Win32"
+		/>
+	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="$(ConfigurationName)"
+			IntermediateDirectory="$(ConfigurationName)"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="vsmake  EBOOT.PBP &amp;&amp; copy EBOOT.PBP &quot;i:\psp\game\REALLY Annoying Level Game&quot;"
+				ReBuildCommandLine="vsmake clean &amp;&amp; vsmake EBOOT.PBP &amp;&amp; copy EBOOT.PBP &quot;i:\psp\game\REALLY Annoying Level Game&quot;"
+				CleanCommandLine="vsmake clean "
+				Output="EBOOT.PBP"
+				PreprocessorDefinitions="WIN32;_DEBUG"
+				IncludeSearchPath="C:\pspsdk\psp\sdk\include"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="$(ConfigurationName)"
+			IntermediateDirectory="$(ConfigurationName)"
+			ConfigurationType="0"
+			>
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="vsmake  EBOOT.PBP &amp;&amp; copy EBOOT.PBP &quot;h:\psp\game\REALLY Annoying Level Game&quot;"
+				ReBuildCommandLine="vsmake clean &amp;&amp; vsmake EBOOT.PBP &amp;&amp; copy EBOOT.PBP &quot;h:\psp\game\REALLY Annoying Level Game&quot;"
+				CleanCommandLine="vsmake clean "
+				Output="EBOOT.PBP"
+				PreprocessorDefinitions="WIN32;NDEBUG"
+				IncludeSearchPath="C:\pspsdk\psp\sdk\include"
+				ForcedIncludes=""
+				AssemblySearchPath=""
+				ForcedUsingAssemblies=""
+				CompileAsManaged=""
+			/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
+			>
+			<File
+				RelativePath=".\ci.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\level.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\main.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\makefile"
+				>
+			</File>
+			<File
+				RelativePath=".\street.cpp"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
+			>
+			<File
+				RelativePath=".\functions.h"
+				>
+			</File>
+			<File
+				RelativePath=".\icon.h"
+				>
+			</File>
+			<File
+				RelativePath=".\initial.h"
+				>
+			</File>
+			<File
+				RelativePath=".\lib.h"
+				>
+			</File>
+			<File
+				RelativePath=".\object.h"
+				>
+			</File>
+			<File
+				RelativePath=".\saveload.h"
+				>
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}"
+			>
+		</Filter>
+		<File
+			RelativePath=".\readme.txt"
+			>
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>
